@@ -1,0 +1,335 @@
+.flower-wrapper {
+  width: 12rem;
+  height: 12rem;
+}
+
+.flower-wrapper .flower {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: rotateZ(-90deg) translateX(-100px);
+}
+
+.flower-wrapper .flower::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 100px;
+  margin: -45px 0 0 19px;
+  background: rgba(20, 0, 0, 0.1);
+  border-radius: 100%;
+  filter: blur(4px);
+  transition: all 700ms cubic-bezier(0.33, 1.7, 0.51, 0.82);
+}
+
+.flower-wrapper .flower .branch {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 40px;
+  height: 10px;
+  background: rgba(155, 100, 0, 0.8);
+  border-bottom: 5px solid rgba(155, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 999px;
+  transform-origin: 5px 5px;
+  transition: all 700ms cubic-bezier(0.33, 1.7, 0.51, 0.82);
+}
+
+.flower-wrapper .flower .branch .branch_1 {
+  transform: rotateZ(33deg);
+}
+
+.flower-wrapper .flower .branch .branch_1_1 {
+  transform: rotateZ(-28deg);
+}
+
+.flower-wrapper .flower .branch .branch_1_1_1 {
+  transform: rotateZ(12deg);
+}
+
+.flower-wrapper .flower .branch .branch_1_1_1_1 {
+  transform: rotateZ(-24deg);
+}
+
+.flower-wrapper .flower .branch .branch_1_1_1_2 {
+  transform: rotateZ(-43deg);
+}
+
+.flower-wrapper .flower .branch .branch_1_1_2 {
+  transform: rotateZ(-44deg);
+}
+
+.flower-wrapper .flower .branch .branch_1_1_2_1 {
+  transform: rotateZ(-26deg);
+}
+
+.flower-wrapper .flower .branch .branch_1_1_2_2 {
+  transform: rotateZ(51deg);
+}
+
+.flower-wrapper .flower .branch .branch_1_2 {
+  transform: rotateZ(52deg);
+}
+
+.flower-wrapper .flower .branch .branch_1_2_1 {
+  transform: rotateZ(-18deg);
+}
+
+.flower-wrapper .flower .branch .branch_1_2_1_1 {
+  transform: rotateZ(45deg);
+}
+
+.flower-wrapper .flower .branch .branch_1_2_1_2 {
+  transform: rotateZ(8deg);
+}
+
+.flower-wrapper .flower .branch .branch_1_2_2 {
+  transform: rotateZ(-26deg);
+}
+
+.flower-wrapper .flower .branch .branch_1_2_2_1 {
+  transform: rotateZ(-47deg);
+}
+
+.flower-wrapper .flower .branch .branch_1_2_2_2 {
+  transform: rotateZ(-2deg);
+}
+
+.flower-wrapper .flower .branch .branch_2 {
+  transform: rotateZ(-18deg);
+}
+
+.flower-wrapper .flower .branch .branch_2_1 {
+  transform: rotateZ(37deg);
+}
+
+.flower-wrapper .flower .branch .branch_2_1_1 {
+  transform: rotateZ(5deg);
+}
+
+.flower-wrapper .flower .branch .branch_2_1_1_1 {
+  transform: rotateZ(65deg);
+}
+
+.flower-wrapper .flower .branch .branch_2_1_1_2 {
+  transform: rotateZ(-27deg);
+}
+
+.flower-wrapper .flower .branch .branch_2_1_2 {
+  transform: rotateZ(55deg);
+}
+
+.flower-wrapper .flower .branch .branch_2_1_2_1 {
+  transform: rotateZ(57deg);
+}
+
+.flower-wrapper .flower .branch .branch_2_1_2_2 {
+  transform: rotateZ(-47deg);
+}
+
+.flower-wrapper .flower .branch .branch_2_2 {
+  transform: rotateZ(51deg);
+}
+
+.flower-wrapper .flower .branch .branch_2_2_1 {
+  transform: rotateZ(48deg);
+}
+
+.flower-wrapper .flower .branch .branch_2_2_1_1 {
+  transform: rotateZ(-8deg);
+}
+
+.flower-wrapper .flower .branch .branch_2_2_1_2 {
+  transform: rotateZ(-64deg);
+}
+
+.flower-wrapper .flower .branch .branch_2_2_2 {
+  transform: rotateZ(65deg);
+}
+
+.flower-wrapper .flower .branch .branch_2_2_2_1 {
+  transform: rotateZ(-64deg);
+}
+
+.flower-wrapper .flower .branch .branch_2_2_2_2 {
+  transform: rotateZ(-18deg);
+}
+
+.flower-wrapper .flower .leaf {
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: #ffbd52b3;
+  transition: all 700ms cubic-bezier(0.33, 1.7, 0.51, 0.82);
+  border-bottom: 15px solid rgba(240, 140, 200, 0.1);
+  box-sizing: border-box;
+}
+
+.flower-wrapper .flower .leaf:nth-child(1) {
+  transform: translateY(-10px);
+}
+
+.flower-wrapper .flower .leaf:nth-child(2) {
+  transform: translateX(10px);
+}
+
+.flower-wrapper .flower .leaf:nth-child(3) {
+  transform: translateY(10px);
+}
+
+.flower-wrapper .flower.switch::before {
+  height: 400px;
+  margin-top: -200px;
+}
+
+.flower-wrapper .flower.switch .branch {
+  width: 70px;
+}
+
+.flower-wrapper .flower.switch .branch .branch {
+  left: 60px;
+  width: 70px;
+}
+
+.flower-wrapper .flower.switch .branch_1 {
+  transform: rotateZ(-18deg);
+}
+
+.flower-wrapper .flower.switch .branch_1_1 {
+  transform: rotateZ(-39deg);
+}
+
+.flower-wrapper .flower.switch .branch_1_1_1 {
+  transform: rotateZ(-1deg);
+}
+
+.flower-wrapper .flower.switch .branch_1_1_1_1 {
+  transform: rotateZ(-30deg);
+}
+
+.flower-wrapper .flower.switch .branch_1_1_1_2 {
+  transform: rotateZ(5deg);
+}
+
+.flower-wrapper .flower.switch .branch_1_1_2 {
+  transform: rotateZ(-57deg);
+}
+
+.flower-wrapper .flower.switch .branch_1_1_2_1 {
+  transform: rotateZ(-63deg);
+}
+
+.flower-wrapper .flower.switch .branch_1_1_2_2 {
+  transform: rotateZ(25deg);
+}
+
+.flower-wrapper .flower.switch .branch_1_2 {
+  transform: rotateZ(54deg);
+}
+
+.flower-wrapper .flower.switch .branch_1_2_1 {
+  transform: rotateZ(38deg);
+}
+
+.flower-wrapper .flower.switch .branch_1_2_1_1 {
+  transform: rotateZ(48deg);
+}
+
+.flower-wrapper .flower.switch .branch_1_2_1_2 {
+  transform: rotateZ(48deg);
+}
+
+.flower-wrapper .flower.switch .branch_1_2_2 {
+  transform: rotateZ(-26deg);
+}
+
+.flower-wrapper .flower.switch .branch_1_2_2_1 {
+  transform: rotateZ(21deg);
+}
+
+.flower-wrapper .flower.switch .branch_1_2_2_2 {
+  transform: rotateZ(-47deg);
+}
+
+.flower-wrapper .flower.switch .branch_2 {
+  transform: rotateZ(60deg);
+}
+
+.flower-wrapper .flower.switch .branch_2_1 {
+  transform: rotateZ(46deg);
+}
+
+.flower-wrapper .flower.switch .branch_2_1_1 {
+  transform: rotateZ(-29deg);
+}
+
+.flower-wrapper .flower.switch .branch_2_1_1_1 {
+  transform: rotateZ(10deg);
+}
+
+.flower-wrapper .flower.switch .branch_2_1_1_2 {
+  transform: rotateZ(-46deg);
+}
+
+.flower-wrapper .flower.switch .branch_2_1_2 {
+  transform: rotateZ(-64deg);
+}
+
+.flower-wrapper .flower.switch .branch_2_1_2_1 {
+  transform: rotateZ(42deg);
+}
+
+.flower-wrapper .flower.switch .branch_2_1_2_2 {
+  transform: rotateZ(0deg);
+}
+
+.flower-wrapper .flower.switch .branch_2_2 {
+  transform: rotateZ(40deg);
+}
+
+.flower-wrapper .flower.switch .branch_2_2_1 {
+  transform: rotateZ(-55deg);
+}
+
+.flower-wrapper .flower.switch .branch_2_2_1_1 {
+  transform: rotateZ(22deg);
+}
+
+.flower-wrapper .flower.switch .branch_2_2_1_2 {
+  transform: rotateZ(16deg);
+}
+
+.flower-wrapper .flower.switch .branch_2_2_2 {
+  transform: rotateZ(45deg);
+}
+
+.flower-wrapper .flower.switch .branch_2_2_2_1 {
+  transform: rotateZ(-16deg);
+}
+
+.flower-wrapper .flower.switch .branch_2_2_2_2 {
+  transform: rotateZ(-28deg);
+}
+
+.flower-wrapper .flower.switch .leaf {
+  top: -55px;
+  left: 40px;
+  width: 120px;
+  height: 120px;
+}
+
+.flower-wrapper .flower.switch .leaf:nth-child(1) {
+  transform: translateY(-40px) rotateZ(-30deg);
+}
+
+.flower-wrapper .flower.switch .leaf:nth-child(2) {
+  transform: translateX(-40px);
+}
+
+.flower-wrapper .flower.switch .leaf:nth-child(3) {
+  transform: translateY(40px) rotateZ(30deg);
+}
