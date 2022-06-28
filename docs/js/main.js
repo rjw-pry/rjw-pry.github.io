@@ -50,17 +50,10 @@ $(() => {
 })
 
 $(() => {
-  const baseLine = new Date('2022-06-26 22:00:00');
+  const baseLine = new Date('2022/06/26 22:00:00');
   const updateTimer = () => {
-    const timeOffset = Date.now() - baseLine.valueOf();
-    const day = Math.floor(timeOffset / (3600 * 1000 * 24));
-    const timeInDay = timeOffset % (3600 * 1000 * 24);
-    const hour = Math.floor(timeInDay / (3600 * 1000));
-    const timeInHour = timeInDay % (3600 * 1000);
-    const minute = Math.floor(timeInHour / (60 * 1000));
-    const timeInMinute = timeInDay % (60 * 1000);
-    const second = Math.floor(timeInMinute / 1000);
-
+    const timeOffset = Date.now() - baseLine.getTime();
+    const day = Math.ceil(timeOffset / (3600 * 1000 * 24));
     $('#timer').text(`${day} days`)
   }
   setInterval(updateTimer, 1000);
