@@ -1,0 +1,56 @@
+.letter {
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 2;
+  top: 60px;
+  left: 30px;
+  right: 30px;
+  bottom: 60px;
+  border-radius: 5px;
+  background-color: #fffaf6;
+  font-family: 'Ma Shan Zheng', cursive;
+}
+
+.letter .heading {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+
+.letter .content {
+  margin-top: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+  line-height: 1.8em;
+  text-indent: 2em;
+  height: calc(100% - 140px);
+  overflow-y: scroll;
+}
+
+.letter .content .banner {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px;
+  margin-bottom: 1.5em;
+}
+
+
+.letter .content p {
+  margin-bottom: 1em;
+}
+
+.letter .content .highlight {
+  color: #D46466;
+  font-size: 2em;
+  font-weight: bold;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+}
+
+.letter .content .deleted {
+  text-decoration: line-through;
+}

@@ -56,6 +56,6 @@ $(() => {
     const day = Math.ceil(timeOffset / (3600 * 1000 * 24));
     $('#timer').text(`${day} days`)
   }
-  setInterval(updateTimer, 1000);
+  // setInterval(updateTimer, 1000);
   updateTimer();
 })
